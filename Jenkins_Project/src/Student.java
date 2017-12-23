@@ -1,6 +1,9 @@
 public class Student {
 
-	public static void main(String[] args) {}
+	public static void main(String[] args) {
+		System.out.print("hello");
+
+	}
 	
 	public enum AttendanceGrade {ABSENT, VERY_POOR, POOR, AVERAGE, GOOD, VERY_GOOD};
     public AttendanceGrade getAttendanceGrade(int attendance) {
@@ -11,5 +14,4 @@ public class Student {
         if (attendance <= 90) return AttendanceGrade.GOOD;
         return AttendanceGrade.VERY_GOOD;
     }
-
 }
