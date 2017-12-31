@@ -1,6 +1,11 @@
+package com.garnertec.maven.NewProject;
+
 import static org.junit.Assert.assertEquals;
 
-public class studentTest {
+/**
+ * Created by meudecc on 15/02/2017.
+ */
+public class StudentTest {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void belowZero() throws Exception {
         Student std = new Student();
@@ -77,5 +82,4 @@ public class studentTest {
         Student std = new Student();
         assertEquals(Student.AttendanceGrade.VERY_GOOD, std.getAttendanceGrade(100));
     }
-
 }
