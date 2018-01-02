@@ -1,4 +1,4 @@
-package com.garnertec.maven.NewProject;
+package jenkinsTask;
 
 import static org.junit.Assert.assertEquals;
 

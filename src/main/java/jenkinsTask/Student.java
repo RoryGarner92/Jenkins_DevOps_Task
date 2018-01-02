@@ -1,4 +1,4 @@
-package com.garnertec.maven.NewProject;
+package jenkinsTask;
 
 /**
  * Created by meudecc on 15/02/2017.
