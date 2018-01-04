@@ -30,7 +30,11 @@ public class StudentTest {
         std.getAttendanceGrade(142);
     }
 
- 
+    @org.junit.Test
+    public void absent() {
+        Student std = new Student();
+        assertEquals(Student.AttendanceGrade.ABSENT, std.getAttendanceGrade(0));
+    }
     @org.junit.Test
     public void lowVeryPoor() {
         Student std = new Student();
@@ -43,6 +47,11 @@ public class StudentTest {
         assertEquals(Student.AttendanceGrade.VERY_POOR, std.getAttendanceGrade(29));
     }
 
+    @org.junit.Test
+    public void lowAverage() {
+        Student std = new Student();
+        assertEquals(Student.AttendanceGrade.AVERAGE, std.getAttendanceGrade(30));
+    }
 
     @org.junit.Test
     public void highAverage() {
@@ -62,7 +71,11 @@ public class StudentTest {
         assertEquals(Student.AttendanceGrade.GOOD, std.getAttendanceGrade(89));
     }
 
- 
+    @org.junit.Test
+    public void lowVeryGood() {
+        Student std = new Student();
+        assertEquals(Student.AttendanceGrade.VERY_GOOD, std.getAttendanceGrade(90));
+    }
 
     @org.junit.Test
     public void highVeryGood() {
